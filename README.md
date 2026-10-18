@@ -6,6 +6,8 @@
 
 Scroll through the looks and the shirt and pants for the model in focus slide in right next to the carousel.
 
+### 🌐 [Live demo → runway-lookbook.vercel.app](https://runway-lookbook.vercel.app)
+
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
