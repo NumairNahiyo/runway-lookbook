@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 56px;
+  padding: 0 24px;
+  background: #fff;
+  font-size: 11px;
+}
+
+.logo {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  color: var(--muted);
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font: inherit;
+  background: none;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.nav a {
+  padding: 19px 4px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav a.active {
+  border-color: var(--ink);
+}
+
+.account {
+  display: flex;
+  gap: 24px;
+}
+
+.account a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 900px) {
+  .search,
+  .nav,
+  .account a:first-child {
+    display: none;
+  }
+
+  .account {
+    margin-left: auto;
+  }
+}

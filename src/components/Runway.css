@@ -1,0 +1,132 @@
+.runway {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background: radial-gradient(ellipse at 60% 85%, #ffffff 0%, #f1f1ef 45%, #e6e5e2 100%);
+}
+
+.runway-intro {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  max-width: 300px;
+  z-index: 20;
+}
+
+.runway-intro h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.runway-intro p {
+  margin-top: 10px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.runway-stage {
+  position: absolute;
+  inset: 0;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.runway-model {
+  position: absolute;
+  bottom: 12%;
+  height: 72%;
+  translate: -50% 0;
+  transform-origin: bottom center;
+  user-select: none;
+  filter: drop-shadow(0 18px 14px rgb(0 0 0 / 0.08));
+}
+
+.runway-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffffcc;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.runway-arrow.left {
+  left: 16px;
+}
+
+.runway-arrow.right {
+  right: 16px;
+}
+
+.runway-down {
+  position: absolute;
+  bottom: 52px;
+  left: 50%;
+  translate: -50% 0;
+  color: var(--muted);
+  z-index: 20;
+}
+
+.runway-footer {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 20;
+  display: flex;
+}
+
+.look-number,
+.shop-look {
+  padding: 8px 18px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.look-number {
+  border: 1px solid var(--line);
+  border-radius: 4px 0 0 4px;
+  background: #fff;
+}
+
+.look-number b {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.shop-look {
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background: var(--ink);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .runway {
+    height: 560px;
+  }
+
+  .runway-model {
+    height: 55%;
+  }
+
+  .runway-intro {
+    top: 20px;
+    left: 20px;
+  }
+
+  .runway-intro p {
+    display: none;
+  }
+}
